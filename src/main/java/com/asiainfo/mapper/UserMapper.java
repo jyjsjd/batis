@@ -34,5 +34,5 @@ public interface UserMapper {
   int saveUser(User user);
 
   @Delete("DELETE FROM user WHERE username=#{username}")
-  int deleteUser(String username);
+  int deleteUser(@Param("username") String username);
 }

@@ -4,6 +4,7 @@
 
 package com.asiainfo.entity;
 
+import lombok.ToString;
 import org.apache.ibatis.type.Alias;
 
 /**
@@ -12,6 +13,7 @@ import org.apache.ibatis.type.Alias;
  * @Version: v1.0
  */
 @Alias("Address")
+@ToString
 public class Address {
 
   private Integer id;

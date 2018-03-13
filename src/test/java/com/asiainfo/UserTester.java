@@ -28,6 +28,7 @@ public class UserTester {
   @Test
   public void testGetUserByName() {
     User user = userMapper.getUser("admin");
+    System.out.println(user.getAddress().toString());
     Assert.assertNotNull(user);
   }
 
